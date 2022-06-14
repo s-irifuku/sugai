@@ -45,5 +45,17 @@ cd {Angularプロジェクト直下}
     }
 }
 ```
+[リクエスト構文]
+this.http.get('パス').subscribe(
+    // 成功
+    response => {
+        成功時の処理
+    },
+    // 失敗
+    error => {
+        失敗時の処理
+    }
+);
+
 [起動時にプロキシ設定]
 ng serve --host 0.0.0.0 --proxy-config proxy.conf.json
